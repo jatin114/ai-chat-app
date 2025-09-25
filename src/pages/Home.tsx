@@ -4,6 +4,7 @@ import { useAuth } from "../context/AuthContext"
 import { auth } from "../lib/firebase";
 import { useChat } from "../hooks/useChat";
 import { formatRelativeTime } from "../utils/formatDate";
+import { Button } from "@/components/ui/button";
 
 const Home = () => {
     const { user } = useAuth();
@@ -82,6 +83,7 @@ const Home = () => {
                 </div>
             </div>
             <button onClick={() => signOut(auth)}>Logout</button>
+            <Button>Button</Button>
         </div>
     )
 }
