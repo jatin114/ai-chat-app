@@ -44,7 +44,7 @@ const Home = () => {
     }
 
     return (
-        <div>
+        <div className="">
             <div className="flex flex-col h-screen">
                 {/* Chat messages */}
                 <div className="flex-1 overflow-y-auto p-4 border-b">
